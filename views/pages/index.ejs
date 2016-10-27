@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="./public/stylesheets/index.css">
+<div class="banner">
+		<img style="width:100%" src="../public/images/banner.png" alt="">
+		<p class="title">邀请函</p>
+</div>
+<div class="form">
+
+	<form method="post" action="/new">
+	    <div class="item">
+	    	<input type="hidden" name="persons[_id]"  value="<%= persons._id %>" >
+	    	<p>
+		    	<label>姓名：</label>
+		    	<input type="text" name="persons[name]" value="<%= persons.name %>" />
+		    </p>
+		    <p>
+		    	<label>入学日期： </label>
+		    	<input type="date" name="persons[enterDate]" value="<%= persons.enterDate %>" />
+		    </p>
+		    <p>
+		    	<label>所读院系： </label>
+		    	<input type="text" name="persons[college]" value="<%= persons.college %>" />
+		    </p>
+		    <p>
+		    	<label>所读专业：</label>
+		    	<input type="text" name="persons[major]" value="<%= persons.major %>"  />
+		    </p>
+		    <p>
+		    	<label>手机号码：</label>
+		    	<input type="phone" name="persons[phoneNumber]"  value="<%= persons.phoneNumber %>" />
+		    </p>
+		    <p>
+		   		<label>邮箱地址： </label>
+		    	<input type="email"  name="persons[email]" value="<%= persons.email %>"  />
+		    </p>
+		    <p>
+		    	<label>工作单位：</label>
+		    	<input type="text" name="persons[job]" value="<%= persons.job %>" />
+		    </p>
+		    
+	    </div>
+	  <button class="btn btn-large btn-info submit-btn">提交</button>
+	</form>
+</div>

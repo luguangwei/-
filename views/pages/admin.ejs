@@ -1,0 +1,41 @@
+<link rel="stylesheet" type="text/css" href="./public/stylesheets/index.css">
+<div class="container list">
+	<div class="row">
+		<table class="table table-hover table-bordered" >
+			<thead>
+				<tr>
+					<th>序号</th>
+					<th>姓名</th>
+					<th>入学日期</th>
+					<th>所读院系</th>
+					<th>所读专业</th>
+					<th>联系方式</th>
+					<th>邮箱地址</th>
+					<th>工作单位</th>
+					<!-- 	<th>删除</th>
+						<td>
+						    <button class="btn btn-sm btn-primary" type="button" >删除</button>
+						</td>
+						 -->
+				</tr>
+				<tbody>
+					<% persons.forEach(function(item,index){ %>
+					<tr class="">
+						<td> <%= index+1 %></td>
+						<td> <%= item.persons.name %> </td>
+						<td> <%= item.persons.enterDate %> </td>
+						<td> <%= item.persons.college %> </td>
+						<td> <%= item.persons.major %> </td>
+						<td> <%= item.persons.phoneNumber %> </td>
+						<td> <%= item.persons.email %> </td>
+						<td> <%= item.persons.job %> </td>
+						
+					</tr>
+					<% }) %>
+				</tbody>
+			</thead>
+		</table>
+	</div>
+</div>
+
+
